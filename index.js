@@ -22,3 +22,8 @@ function doSomething() {
 function guestBookAll() {
     loadGuestbook(invitationId, 'all', 0);
 }
+
+function infoDetail() {
+    $(this).parent('.list_wrap').toggleClass('on');
+    $('.list_con').slideToggle();
+};
