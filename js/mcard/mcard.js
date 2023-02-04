@@ -609,7 +609,7 @@ window.onload = function() {
         $(".i_WeddingHallDetail").prepend("</br>");
     }
 
-});
+};
 
 
 function getWeddingWeekName(txt) {
