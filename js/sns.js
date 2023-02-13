@@ -8,7 +8,7 @@ function sendSns(sns, url, txt) {
         case 'facebook':
             o = {
                 method: 'popup',
-                url: 'http://www.facebook.com/sharer/sharer.php?u=' + _url
+                url: 'http://www.facebook.com/sharer/sharer.php?u=' + "https://i-zro.github.io/m-Dodong-Wedding"
             };
             break;
 
