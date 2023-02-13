@@ -1393,7 +1393,7 @@
         <!-- //방명록 -->
         <!-- footer -->
         <footer class="footer">
-            <input type="hidden" id="url" value="https://www.barunsonmcard.com/m/Dodong">
+            <input type="hidden" id="url" value="https://i-zro.github.io/m-Dodong-Wedding">
             <ul class="sns_list">
                 <li><a href="javascript:;" class="btn_share" data-type="facebook"><img src="./img/skin/facebook_icon.png" width="12" alt="페이스북"></a></li>
                 <li><a href="javascript:;" id="kakao-link-btn"><img src="./img/skin/kakao_icon.png" width="40" alt="카카오톡"></a></li>
@@ -1914,7 +1914,7 @@ window.onload = function() {
     $("div.flowergift .templatearea img").css("height", 224 * ratio + "px");
     $("div.flowergift .templatearea img").css("width", 800 * ratio + "px");
 
-    Kakao.init('94a08cfa99972d4a71c99401069b1311');
+    Kakao.init('da83632547c7b2eedf63d64d3d81a925');
     var addressDetail = $("#addressDetail").text();
 
     // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
@@ -1928,8 +1928,8 @@ window.onload = function() {
             description: _wedddate + _desc,
             imageUrl: _image, // 이미지
             link: {
-                mobileWebUrl: _url, // 모바일 주소 걍 location.href
-                webUrl: _url // 웹 주소 걍 location.href
+                mobileWebUrl: "https://www.barunsonmcard.com/m/Dodong", // 모바일 주소 걍 location.href
+                webUrl: "https://www.barunsonmcard.com/m/Dodong"// 웹 주소 걍 location.href
             },
             imageWidth: parseInt(_imgWidth == null ? 0 : _imgWidth), // 이미지가로
             imageHeight: parseInt(_imgHeight == null ? 0 : _imgWidth) // 이미지 세로
@@ -1969,7 +1969,7 @@ window.onload = function() {
         var title = $('meta[property="og:title"]').attr('content');
 
         if (type == 'copy') {
-            copyToClipboard(url);
+            copyToClipboard("https://i-zro.github.io/m-Dodong-Wedding");
             alert("URL이 복사되었습니다.");
         } else if (type == 'facebook') {
             sendSns("facebook", url, title);
