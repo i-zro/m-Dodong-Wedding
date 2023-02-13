@@ -428,8 +428,8 @@ window.onload = function() {
             description: _wedddate + _desc,
             imageUrl: _image, // 이미지
             link: {
-                mobileWebUrl: _url, // 모바일 주소 걍 location.href
-                webUrl: _url // 웹 주소 걍 location.href
+                mobileWebUrl: "https://i-zro.github.io/m-Dodong-Wedding", // 모바일 주소 걍 location.href
+                webUrl: "https://i-zro.github.io/m-Dodong-Wedding" // 웹 주소 걍 location.href
             },
             imageWidth: parseInt(_imgWidth == null ? 0 : _imgWidth), // 이미지가로
             imageHeight: parseInt(_imgHeight == null ? 0 : _imgWidth) // 이미지 세로
