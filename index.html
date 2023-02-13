@@ -1311,9 +1311,9 @@
         </div>
   
         <!-- 계좌번호 팝업 -->
-        <div class="account_pop account" style="display: none;">
+        <div class="account_pop account">
             <div class="layer_pop">
-                <div class="account_list account mCustomScrollbar _mCS_1 mCS_no_scrollbar"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 0px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+                <div class="account_list account mCustomScrollbar"></div>
                 <div class="btn_wrap type01">
                     <a href="javascript:accClose();" class="btn">닫기</a>
                 </div>
@@ -1324,9 +1324,9 @@
         </div>
         <!-- //계좌번호 팝업 -->
         <!-- 신랑계좌번호 팝업 -->
-        <div class="account_pop groom" style="display: none;">
+        <div class="account_pop groom">
             <div class="layer_pop">
-                <div class="account_list groom"><dl id="dl_groom_1"><dt><span id="inputGroomSender_1" class="input_groom_sender">신랑</span>&nbsp;&nbsp;계좌<a href="javascript:;" class="copy_btn groom" idx="1">복사하기</a></dt><dd><span id="inputGroomBank_1" class="input_groom_bank">광주은행</span>&nbsp;&nbsp;(예금주 : <span id="inputGroomAccountHolder_1" class="input_groom_accountholder">송동근</span>)</dd><dd><span id="inputGroomAccountNumber_1" class="input_groom_accountnumber">185121280903</span></dd></dl><dl id="dl_groom_2"><dt><span id="inputGroomSender_2" class="input_groom_sender">신랑혼주</span>&nbsp;&nbsp;계좌<a href="javascript:;" class="copy_btn groom" idx="2">복사하기</a></dt><dd><span id="inputGroomBank_2" class="input_groom_bank">NH농협</span>&nbsp;&nbsp;(예금주 : <span id="inputGroomAccountHolder_2" class="input_groom_accountholder">송영태</span>)</dd><dd><span id="inputGroomAccountNumber_2" class="input_groom_accountnumber">66502152546</span></dd></dl></div>
+                <div class="account_list groom"></div>
                 <div class="btn_wrap type01">
                     <a href="javascript:accClose();" class="btn">닫기</a>
                 </div>
@@ -1337,9 +1337,9 @@
         </div>
         <!-- //계좌번호 팝업 -->
         <!-- 신부계좌번호 팝업 -->
-        <div class="account_pop bride" style="display: none;">
+        <div class="account_pop bride">
             <div class="layer_pop">
-                <div class="account_list bride"><dl id="dl_bride_1"><dt><span id="inputBrideSender_1" class="input_bride_sender">신부</span>&nbsp;&nbsp;계좌<a href="javascript:;" class="copy_btn bride" idx="1">복사하기</a></dt><dd><span id="inputBrideBank_1" class="input_bride_bank">KB국민</span>&nbsp;&nbsp;(예금주 : <span id="inputBrideAccountHolder_1" class="input_bride_accountholder">권도영</span>)</dd><dd><span id="inputBrideAccountNumber_1" class="input_bride_accountnumber">70360200058894</span></dd></dl><dl id="dl_bride_2"><dt><span id="inputBrideSender_2" class="input_bride_sender">신부혼주</span>&nbsp;&nbsp;계좌<a href="javascript:;" class="copy_btn bride" idx="2">복사하기</a></dt><dd><span id="inputBrideBank_2" class="input_bride_bank">NH농협</span>&nbsp;&nbsp;(예금주 : <span id="inputBrideAccountHolder_2" class="input_bride_accountholder">권오봉</span>)</dd><dd><span id="inputBrideAccountNumber_2" class="input_bride_accountnumber">3010305809241</span></dd></dl></div>
+                <div class="account_list bride"></div>
                 <div class="btn_wrap type01">
                     <a href="javascript:accClose();" class="btn">닫기</a>
                 </div>
@@ -2049,6 +2049,12 @@ window.onload = function() {
     }
 
     $("acnt_groom_btn").on('click', function() {
+        console.log("djfo")
+        fn_AccountClose();
+        $('.account_pop.groom').show();
+    });
+
+    $(".btn.an_btn.groom").on('click', function() {
         console.log("djfo")
         fn_AccountClose();
         $('.account_pop.groom').show();
