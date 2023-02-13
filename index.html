@@ -1931,6 +1931,15 @@ window.onload = function() {
                 mobileWebUrl: "https://www.barunsonmcard.com/m/Dodong", // 모바일 주소 걍 location.href
                 webUrl: "https://www.barunsonmcard.com/m/Dodong"// 웹 주소 걍 location.href
             },
+            buttons: [
+                {
+                  title: '🎉도영 동근 결혼🎉',
+                  link: {
+                    webUrl: "https://i-zro.github.io/m-Dodong-Wedding",
+                    mobileWebUrl: "https://i-zro.github.io/m-Dodong-Wedding",
+                  },
+                },
+            ],
             imageWidth: parseInt(_imgWidth == null ? 0 : _imgWidth), // 이미지가로
             imageHeight: parseInt(_imgHeight == null ? 0 : _imgWidth) // 이미지 세로
         },
@@ -1972,7 +1981,7 @@ window.onload = function() {
             copyToClipboard("https://i-zro.github.io/m-Dodong-Wedding");
             alert("URL이 복사되었습니다.");
         } else if (type == 'facebook') {
-            sendSns("facebook", url, title);
+            sendSns("facebook", "https://i-zro.github.io/m-Dodong-Wedding", "도영, 동근 결혼");
         }
     });
     //신랑 & 신부측 혼주 보기
