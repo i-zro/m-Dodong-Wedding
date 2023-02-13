@@ -431,18 +431,18 @@ window.onload = function() {
                 mobileWebUrl: "https://i-zro.github.io/m-Dodong-Wedding", // 모바일 주소 걍 location.href
                 webUrl: "https://i-zro.github.io/m-Dodong-Wedding" // 웹 주소 걍 location.href
             },
-            buttons: [
-                {
-                  title: '🎉도영 동근 결혼🎉',
-                  link: {
-                    webUrl: "https://i-zro.github.io/m-Dodong-Wedding",
-                    mobileWebUrl: "https://i-zro.github.io/m-Dodong-Wedding",
-                  },
-                },
-            ],
             imageWidth: parseInt(_imgWidth == null ? 0 : _imgWidth), // 이미지가로
             imageHeight: parseInt(_imgHeight == null ? 0 : _imgWidth) // 이미지 세로
         },
+        buttons: [
+            {
+              title: '🎉도영 동근 결혼🎉',
+              link: {
+                webUrl: "https://i-zro.github.io/m-Dodong-Wedding",
+                mobileWebUrl: "https://i-zro.github.io/m-Dodong-Wedding",
+              },
+            },
+        ],
         address: addressDetail
     });
     if (outlineType == "OTC01") {
