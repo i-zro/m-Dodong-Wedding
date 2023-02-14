@@ -418,32 +418,10 @@ window.onload = function() {
     }
 
     // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-    Kakao.Link.createDefaultButton({
-        container: '#kakao-link-btn', // 버튼 id
-        objectType: 'location', // 카카오톡 링크 타입
-        content: {
-            title: _title, // 타이틀
-            //description: _desc + "\n바른손M카드 모바일청첩장", // 상세정보
-            //description: _desc + "\n바른손M카드", // 상세정보
-            description: _wedddate + _desc,
-            imageUrl: _image, // 이미지
-            link: {
-                mobileWebUrl: "https://i-zro.github.io/m-Dodong-Wedding", // 모바일 주소 걍 location.href
-                webUrl: "https://i-zro.github.io/m-Dodong-Wedding" // 웹 주소 걍 location.href
-            },
-            imageWidth: parseInt(_imgWidth == null ? 0 : _imgWidth), // 이미지가로
-            imageHeight: parseInt(_imgHeight == null ? 0 : _imgWidth) // 이미지 세로
-        },
-        buttons: [
-            {
-              title: '🎉도영 동근 결혼🎉',
-              link: {
-                webUrl: "https://i-zro.github.io/m-Dodong-Wedding",
-                mobileWebUrl: "https://i-zro.github.io/m-Dodong-Wedding",
-              },
-            },
-        ],
-        address: addressDetail
+    Kakao.Link.createScrapButton({
+        container: '#kakao-link-btn',
+        requestUrl: 'https://i-zro.github.io/m-Dodong-Wedding',
+        templateId : 89945
     });
     if (outlineType == "OTC01") {
         strMapMedia = '<iframe id="map" src="/Mcard/NaverMap/' + invitationId + '" width="750" height="320" frameborder="0" style="border: 0" allowfullscreen></iframe>';
